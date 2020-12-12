@@ -1,0 +1,33 @@
+label{
+    font-weight: bolder;
+    margin-left: 30px;
+}
+input{
+    margin-left: 20px;
+    width: 400px;
+}
+h5{
+    background-color: white;border-radius: 10px;
+    margin: 30px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.space{
+    background-image: url("https://wallup.net/wp-content/uploads/2018/09/25/621991-red-bed-room-interior-748x468.jpg");
+    height:100px;
+    
+}
+img{
+    height: 30px;
+    width: 100%;
+
+}
+.space2{
+
+    height: 100px;
+}

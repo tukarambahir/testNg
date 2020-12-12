@@ -1,0 +1,45 @@
+
+<!-- <body background="https://image.shutterstock.com/image-photo/blue-hour-city-blurred-background-260nw-680849698.jpg"class="body"> -->
+  
+  
+  
+<nav class="navbar navbar-expand-lg navbar-dark">
+  
+  <span><img class="logo" src="https://images.squarespace-cdn.com/content/v1/55bb6642e4b0c91676284881/1541790476167-0XDWR6F0SGMXPGO307MB/ke17ZwdGBToddI8pDm48kHqYAt3UgyjNg-0dlUc4K5hZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7UnCxNA8dHvmd7460Z7fbKEmJ2gL2qv94i4UWS2y7YfwkXCxk_sn2atIO3dASbw33Q/tmn+logo.png" alt="">
+  </span>
+  <!-- <a class="navbar-brand" href="#">Home</a> -->
+  <a class="navbar-brand" (click)="home()"style="color:white;background-color:teal;border-radius:10px" class="nav-link">HOME</a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <!-- <li class="nav-item"><a routerLink="/home/booking/add-booking" class="nav-link">New Booking</a></li> -->
+    </ul>
+  </div>
+</nav>
+  
+
+  
+  <body>
+    <div class="box">
+            <div><img class="monkeyimg"src="https://img2.pngio.com/mailchimp-logo-mailchimp-white-icon-transparent-full-size-png-mailchimp-logo-png-2276_2382.png">
+           <br><br><br><br><span class="text-center">Get Started Login Now</span>
+        
+       
+        <div class="input-container">		
+            <input [(ngModel)]="email"id ="email"type="mail" required />
+            <label class="color">E-mail</label>
+        </div>
+        
+        <div class="input-container">		
+            <input [(ngModel)]="password"id="password"type="password" required=""/>
+            <label class="color">password</label>
+        </div>
+        
+       <div class="input-container">
+        <button (click)="onLogin()"type="button" class="btn">Login</button><span style="margin-left: 10px;font-size: 15px;cursor: pointer;" class="color">Do not have account? <a class="link Signin" routerLink="/auth/signup">Signup</a></span>
+      </div>
+   
+    </div>
+  
+  </div>
+  </body>
+  

@@ -1,0 +1,39 @@
+<div style="border-radius: 10px;margin-left: -20px;"class="card">
+    <div style="background-color: teal;color: white;text-align: center;font-weight: bolder;"class="card-header">Profile</div>
+    <div class="card-body">
+        <div style="background-color: rgba(211, 211, 211, 0.288);width: 900px;margin-left: 300px;"class="form">
+            <!-- <div class="form-group">
+                <label for="">Booking Id</label>
+                <input type="text" class="form-control">
+            </div> -->
+            <div style="height: 200px;border-radius: 20px;position: relative;"class="space">
+            
+                <div style="background-color: white;position: absolute;height: 150px;width: 150px;margin-left: 370px;margin-top: 150px;border-radius: 75px;"></div>
+                <img style="background-color: white;position: absolute;height: 150px;width: 150px;margin-left: 370px;margin-top: 120px;border-radius: 75px;"*ngIf="User_data['image']" class="user-image" src="http://localhost:3000/user/image/{{User_data['image']}}" alt="">
+                <button (click)="uploadImage(User_data)" class="btn btn-sm btn-info">Change Profile</button>
+            </div>
+            <div style="background-color: white;height:80px">
+                <img style="margin-bottom: -30px;"src="../../../assets/line.png">
+                </div>
+            
+            
+            <div class="row">
+            <div class="col-md-6">
+
+                <h5>Name : {{User_data['Name']}}</h5>
+                <h5>Email : {{User_data['Email']}}</h5>
+                <h5>Phone : {{User_data['Phone']}}</h5>
+                </div>
+               
+                <div class="col-md-6">
+                <h5>Date of Birth : {{User_data['DOB']}}</h5>
+                <h5>Gender : {{User_data['Gender']}}</h5>
+                <h5>Address : {{User_data['Address']}}</h5>
+            </div>
+            
+         <button style="float: left;margin-left:45px;margin-bottom: 10px;border-radius: 10px;"(click)="edit(User_data)" type="submit" class="btn btn-success Button">Edit</button> 
+        </div></div>
+    </div>
+</div>
+
+<hr><div style="text-align: center;background-color: rgb(31, 30, 30);height: 60px;line-height: 60px;color:rgb(100, 100, 100)">TMN Stay @All RIghts Reserved</div>

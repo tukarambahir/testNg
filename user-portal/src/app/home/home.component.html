@@ -1,0 +1,29 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  
+  <span><img class="logo" src="https://images.squarespace-cdn.com/content/v1/55bb6642e4b0c91676284881/1541790476167-0XDWR6F0SGMXPGO307MB/ke17ZwdGBToddI8pDm48kHqYAt3UgyjNg-0dlUc4K5hZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7UnCxNA8dHvmd7460Z7fbKEmJ2gL2qv94i4UWS2y7YfwkXCxk_sn2atIO3dASbw33Q/tmn+logo.png" alt="">
+  </span>
+  <!-- <a class="navbar-brand" href="#">Home</a> -->
+  <a class="navbar-brand"routerLink="/home/h/home"style="color:white" class="nav-link">HOME</a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"><a routerLink="/home/pg/pglist" class="nav-link">Explore TMN</a></li>
+      <li class="nav-item"><a routerLink="/home/booking/booking-list" class="nav-link">Bookings</a></li>
+      <!-- <li class="nav-item"><a routerLink="/home/booking/add-booking" class="nav-link">New Booking</a></li> -->
+
+      
+      <li class="nav-item"><a style="margin-left: 900px;border-radius: 6px;" routerLink="/home/user/profile" class="nav-link">Profile</a></li>
+
+      <li (click)="onLogout()"class="nav-item"><a style="background-color: teal;margin-left: 100px;color: white;border-radius: 6px;" class="nav-link">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- main contents -->
+  <!-- <div class="tr"> -->
+    
+
+
+<div style="width:1500px;margin:10px;">
+  <!-- <app-home></app-home> -->
+  <router-outlet></router-outlet>
+</div>

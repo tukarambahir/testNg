@@ -1,0 +1,40 @@
+
+<div class="container">
+<div class="card">
+    <div class="card-header">New Booking </div>
+    <div class="card-body">
+        <div class="form">
+            <!-- <div class="form-group">
+                <label for="">Booking Id</label>
+                <input type="text" class="form-control">
+            </div> -->
+            <div class="form-group">
+                <label for="">Pg Name</label>
+                <input [(ngModel)]="booking['PgName']" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Room Type</label>
+                <!-- [value]="Pgdetails['AC'] -->
+                <select [(ngModel)]="booking['RoomType']"  class="form-control">
+                    <option value="RO_AC">AC</option>
+                    <option value="RO_NonAC" selected>Non_AC</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">Check In Date</label>
+                <input [(ngModel)]="booking['CheckInDate']" type="date" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Check Out Date</label>
+                <input [(ngModel)]="booking['CheckOutDate']" type="date" class="form-control">
+            </div>
+            <div class="form-group ">
+                <button (click)="newbooking(UserId,booking)" type="submit" class="btn btn-success Button">Book</button>
+                <button (click) ="onCancel()"style="margin-left: 50px;"class="btn btn-danger Button">Go Back</button>
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>

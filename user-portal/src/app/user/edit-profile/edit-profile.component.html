@@ -1,0 +1,41 @@
+<div class=container>
+
+ <div style="background-color: rgb(236, 234, 234);" class="card">
+    <div class="card-header">Profile Edit Page</div>
+    <div class="card-body">
+        <div class="form">
+           
+            <div style="margin-top: 30px;"class="form-group">
+                <label for="">Name</label>
+                <input [(ngModel)]="Name" type="text" class="form-control">
+            </div>
+                <div class="form-group">
+                    <label for="DOB">Gender : </label>
+                    <input type="radio" required name='Gender' value='Female' [(ngModel)]="Gender">Female
+                    <input type="radio" required name='Gender' value='Male' [(ngModel)]="Gender">Male
+            </div>
+            <div class="form-group">
+                <label for="">Date of Birth</label>
+                <input [(ngModel)]="DOB" type="date" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Phone</label>
+                <input [(ngModel)]="Phone" type="number" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Address</label>
+                <input [(ngModel)]="Address" style="height: 100px;"type="text" class="form-control">
+            </div>
+            <div class="form-group ">
+                <button (click)="onUpdate()" type="submit" class="btn btn-success Button">Save</button>
+                <button (click)="Cancel()"style="margin-left: 50px;"class="btn btn-danger Button" >Back</button>
+            
+            </div>
+        </div>
+
+    </div>
+</div> 
+
+</div>
+
+<hr><div style="text-align: center;background-color: rgb(31, 30, 30);height: 60px;line-height: 60px;color:rgb(100, 100, 100)">TMN Stay @All RIghts Reserved</div>
